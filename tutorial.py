@@ -7,13 +7,15 @@ def init_board():
     j = 10 #横
 
     #内包表記で二次元配列tetrisを定義
-    tetris = [['' for count_1 in range(j)] for count_2 in range(i)]
+    tetris = [['0' for count_1 in range(j)] for count_2 in range(i)]
 
+    '''
     #tetris 4×4行列の値初期化
     for a in range(i):
         for b in range(j):
             tetris[a][b] = '0'
-
+    '''
+    
     #tetris 行列内の文字列表示
     for a in range(i):
         tetris_array = ''
